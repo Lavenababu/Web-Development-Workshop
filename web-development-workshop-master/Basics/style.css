@@ -1,0 +1,73 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+.heading-2{
+    color: #fff;
+    background-color: #000;
+    padding: 10px 10px 10px 50px;
+    border-left: solid 15px red;
+    margin: 0 30px 0 0;
+}
+
+#demo{
+    background-color: aqua;
+}
+.list{
+    text-decoration: none;
+    list-style: none;
+    display: flex;
+    justify-content: flex-end;
+}
+.item{
+    padding: 20px;
+    cursor: pointer;
+}
+
+.item:hover{
+    color: red;
+}
+.container{
+    display: inline-block;
+    background-color: beige;
+    padding: 50px;
+    border-left: solid 15px violet;
+}
+.para{
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+.container:hover{
+    transform: scaleY(2);
+}
+#demo{
+    font-size: 50px;
+}
+
+/* Animation */
+.animate{
+    width: 100px;
+    height: 100px;
+    border-radius: 20px;
+    background-color: red;
+    position: relative;
+    animation-name: sample;
+    animation-duration: 8s;
+}
+
+@keyframes sample{
+    0%{
+        background-color: violet;
+        left: 0;
+        top: 0;
+    }
+    25%{
+        background-color: yellow;
+        left: 200px;
+        top: 0;
+    }
+    50%{
+        background-color: #000;
+        left: 200px;
+        top: 200px;
+    }
+}
